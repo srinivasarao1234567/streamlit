@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 st.set_page_config(page_title="Internship Dashboard", layout="wide")
 
 # Load Excel
-xls = pd.ExcelFile("C:/DA/marksexcel.xlsx")
+xls = pd.ExcelFile("marksexcel.xlsx")        
 df1 = xls.parse(xls.sheet_names[0], skiprows=3)
 df2 = xls.parse(xls.sheet_names[1], skiprows=3)
 
